@@ -6,6 +6,7 @@ import {music, numbers, play, pause, next, previous, matrixFromNumber} from './i
 import MusicApp from './apps/MusicApp';
 import LightsApp from './apps/LightsApp';
 import ThermoStatApp from './apps/ThermoStatApp';
+import ProjectorApp from './apps/ProjectorApp';
 
 (async () => {
     const nuimo = new NuimoSdk("EF:AE:62:A9:4B:47");
@@ -16,7 +17,8 @@ import ThermoStatApp from './apps/ThermoStatApp';
     let apps = [
         new MusicApp(nuimo),
         new LightsApp(nuimo),
-        new ThermoStatApp(nuimo)
+        new ThermoStatApp(nuimo),
+        new ProjectorApp(nuimo)
     ]
 
     let activeApp = 0;
